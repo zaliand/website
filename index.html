@@ -2,6 +2,10 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 <meta charset="UTF-8">
 <meta charset="UTF-8">
@@ -11,28 +15,31 @@
 <body>
 <form>
   nombre:<br>
-  <input id="nombre" type="text" name="nombre"><br>
+  <input id="nombre" class="form-control" placeholder="escriba el nombre"  type="text" name="nombre"><br>
   apellido:<br>
-  <input id="apellido" type="text" name="apellido"><br>
+  <input  id="apellido" class="form-control" placeholder="escriba el apellido" type="text" name="apellido"><br>
   ciudad:<br>
-  <input type="text" name="ciudad"><br>
+  <input  id="ciudad" class="form-control" placeholder="escriba la ciudad" type="text" name="ciudad"><br>
   correo electronio:<br>
-  <input type="text" name="correo"><br>
+  <input  id="correo" class="form-control" placeholder="escriba el correo" type="text" name="correo"><br>
   estado civil:<br>
 
   <input type="radio" name="gender" value="soltero" checked> soltero<br>
   <input type="radio" name="gender" value="casado"> casado<br>
   <input type="radio" name="gender" value="otro"> Otro<br>
   profesion:<br>
-  
-  <select onchange="obtenerProfesion()" name="profesion" id="profesion">
-	  <option value="" disabled selected>Seleccione una Provincia...</option>
+
+  <select name="profesion" id="profesion">
+	  <option value="" disabled selected>Seleccione una profesion...</option>
 	  <option value="Empleado">Empleado</option>
 	  <option value="Independiente">Independiente</option>
 	  <option value="Desempleado">Desempleado</option>
-  </select>
-
-  <button onclick="registrarse(event)">Registrarse</button>
+  </select><br>
+<label>Mensaje</label><br>
+<textarea id="" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+</textarea><br>
+  <button class="btn btn-morado" id="btn-registrarse">Registrarse</button>
 </form>
 	
 </body>

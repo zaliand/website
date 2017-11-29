@@ -1,3 +1,9 @@
 body{
 	background-color:blue;
 }
+
+.btn-morado{
+	color: #ffffff;
+    background-color: #3c122b;
+    border-color: #000000;
+}

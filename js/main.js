@@ -1,22 +1,20 @@
-function registrarse(event){
-	event.preventDefault();
+$( document ).ready(function(){
+		$("#btn-registrarse").click(function(event){
+			 event.preventDefault();
 
-	var minombre = document.getElementById("nombre").value;
-	var miapellido = document.getElementById("apellido").value;
+			var nombre = $('#nombre').val();
+	   		var apellido = $('#apellido').val();
+			var ciudad = $('#ciudad').val();
+			var correo = $('#correo').val();
 
-	var radios = document.getElementsByName('gender');
-	
-	for (var i = 0; i < radios.length; i++) {
-		 if (radios[i].checked){
-		  // do whatever you want with the checked radio
-		  // only one radio can be logically checked, don't check the rest
-		 }
-	}
-	obtenerProfesion();
-}
+			var estado_civil = $("input[name='gender']:checked").val(); 
+			var profesion = $("#profesion").val();
 
-
-function obtenerProfesion(){
-	 var x = document.getElementById("profesion").value;
-	 console.log("valor", x);
-}
+			console.log("el nombre es", nombre);
+			console.log("el apellido es", apellido);
+			console.log("el ciudad es", ciudad);
+			console.log("el correo es", correo);
+			console.log("el estado civil es", estado_civil);
+			console.log("la profesion es", profesion);
+		});
+});
